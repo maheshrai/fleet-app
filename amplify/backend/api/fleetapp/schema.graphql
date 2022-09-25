@@ -1,0 +1,31 @@
+enum InspectionState {
+  INSPECTED
+  REQUIRES_ATTENTION
+  NOT_APPLICABLE
+}
+
+type VehicleInspection @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  vehicleNumber: String!
+  licensePlate: String!
+  mileage: Int!
+  orgOrUnit: String!
+  tires: InspectionState
+  windshieldAndWindows: InspectionState
+  exterior: InspectionState
+  horn: InspectionState
+  wipers: InspectionState
+  lights: InspectionState
+  fireExtinguisherAndFirstAidKit: InspectionState
+  safetyReflectors: InspectionState
+  vehicleRegistrationAndInsurance: InspectionState
+  emergencyContactSheet: InspectionState
+  cleanliness: InspectionState
+  fuelTankFull: InspectionState
+  equipmentSecured: InspectionState
+  vehicleLocked: InspectionState
+  notes: String
+  username: String
+  inspectionDate: AWSDate
+}
+ 

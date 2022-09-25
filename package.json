@@ -18,6 +18,12 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.17.10",
+    "@react-native-community/netinfo": "^9.3.0",
+    "@react-native-picker/picker": "^2.4.4",
+    "amazon-cognito-identity-js": "^5.2.10",
+    "aws-amplify": "^4.3.35",
+    "aws-amplify-react-native": "^6.0.5",
     "expo": "^44.0.0",
     "expo-status-bar": "~1.2.0",
     "native-base": "3.4.0",
